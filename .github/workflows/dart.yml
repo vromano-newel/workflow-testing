@@ -1,8 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: Analyze and Testing
 
 on:
@@ -16,23 +11,36 @@ on:
       - version-*
 
 jobs:
-  build:
+  analysis:
+    name: format
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-
-      - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
         with:
-          channel: stable
-          version: 3.1.3
-
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Analyze project source
-        run: flutter analyze
-
+          flutter-version: '3.1.3'
+          channel: 'stable'
+          architecture: x64
+      - name: Check Code Format
+        run: dart format . --set-exit-if-changed
+      - name: Generate code
+        run: dart run build_runner build
+      - name: Analyze code
+        run: dart analyze .
+  widget-tests:
+    name: widget-tests
+    runs-on: ubuntu-latest
+    needs: analysis
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.1.3'
+          channel: 'stable'
+          architecture: x64
+      - name: Generate code
+        run: dart run build_runner build
       - name: Run tests
         run: flutter test
