@@ -1,4 +1,0 @@
-#Thu Feb 01 12:25:50 CET 2024
-base.0=/Users/vincenzo.romano/Data/Projects/workflow-testing/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
