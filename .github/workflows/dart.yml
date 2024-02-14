@@ -16,21 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
+      - name: Setup Flutter SDK
+        uses: flutter-actions/setup-flutter@v2
       - name: Analyze code
         run: dart analyze .
-  widget-tests:
-    name: widget-tests
-    runs-on: ubuntu-latest
-    needs: analysis
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
       - name: Run tests
         run: flutter test
