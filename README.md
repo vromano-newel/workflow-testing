@@ -1,4 +1,6 @@
-[![Analyze and Testing](https://github.com/vromano-newel/workflow-testing/actions/workflows/dart.yml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/dart.yml)
+[![Analyze](https://github.com/vromano-newel/workflow-testing/actions/workflows/analyze.yml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/analyze.yml)
+
+[![Testing](https://github.com/vromano-newel/workflow-testing/actions/workflows/testing.yaml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/testing.yaml)
 
 # workflowtesting
 
