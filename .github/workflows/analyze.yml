@@ -20,7 +20,8 @@ jobs:
       - name: Flutter getting dependencies
         run: flutter pub get
       - uses: dart-lang/setup-dart@v1
-      - uses: invertase/github-action-dart-analyzer@v1
+      - name: Flutter analyze
+        uses: invertase/github-action-dart-analyzer@v1
         with:
           # (Optional) Treat info level issues as fatal.
           fatal-infos: false
