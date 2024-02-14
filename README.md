@@ -1,4 +1,6 @@
-[![Analyze and Testing](https://github.com/vromano-newel/workflow-testing/actions/workflows/dart.yml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/dart.yml)
+[![Analyze](https://github.com/vromano-newel/workflow-testing/actions/workflows/analyze.yml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/analyze.yml)
+
+[![Testing](https://github.com/vromano-newel/workflow-testing/actions/workflows/testing.yaml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/testing.yaml)
 
 # workflowtesting
 
@@ -16,3 +18,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# update 1
+
+# update 2

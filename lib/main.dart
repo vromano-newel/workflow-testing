@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     _counter.increment();
-    setState(() { });
+    setState(() {});
   }
 
   @override
