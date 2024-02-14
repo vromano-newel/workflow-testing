@@ -1,3 +1,5 @@
+[![Analyze and Testing](https://github.com/vromano-newel/workflow-testing/actions/workflows/dart.yml/badge.svg)](https://github.com/vromano-newel/workflow-testing/actions/workflows/dart.yml)
+
 # workflowtesting
 
 Flutter App
